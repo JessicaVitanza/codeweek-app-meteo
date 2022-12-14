@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <title>Weather App</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+</head>
+<body>
+        <!-- CLOCK - DATE -->
+        <div class="content">
+            <div id="my-clock" class="clock">
+            </div>
+        
+            <div id="date" class="date">
+            </div>
+          </div>
+
+    <!-- DEFAULT CITY -->
+    <div class="defaultCity"></div>
+
+    <!-- SEARCH -->
+    <div class="searchBar">
+        <form name="weatherForm" class="searchForm">
+            <input type="text" name="nameCity" placeholder="Inserisci la città..." autocomplete="off" class="nameCity" id="nameCity"> 
+            <button type="submit" class="btnSearch">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+    </div>
+
+    <div class="modal">
+            <span class="close-button">x</span>
+            <p>Città: <p class="citynotfound"></p> non trovata</p> 
+    </div>
+
+    <section class="main">
+        
+        <!-- CURRENT CITY -->
+        <section class="weatherCity">
+            <div class="mainTown">
+                <div class="infoCity">
+                    <h1 class="city"></h1>
+                    <span class="country"></span>
+                </div>
+            </div>
+            <div class="weatherInfo">
+                <div class="mainWeather">
+                    <h4 class="weather"></h4>
+                    <img src="" alt="icona meteo" class="imgWeather">
+                    <div class="infoElement">
+                        <h2 class="grades"></h2>
+                    <div class="minMax">
+                        <div class="elTempMin">
+                            <h5 class="tempMin">Temp. min</h5>
+                            <h5 class="minGrades"></h5>
+                        </div>
+                        <div class="elTempMax">
+                            <h5 class="tempMax">Temp. max</h5>
+                            <h5 class="maxGrades"></h5>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="pressureHumiditySpeed">
+                        <div class="humidityContainer">
+                            <h5 class="humidity">Umidity</h5>
+                            <p class="humidityVal"></p>
+                        </div>
+                        <div class="pressureContainer">
+                            <h5 class="pressure">Pressure</h5>
+                            <p class="pressureVal"></p>
+                        </div>
+                        <div class="speedContainer">
+                            <h5 class="speed">Wind</h5>
+                            <p class="speedVal"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- DAILY FORECAST -->
+        <section class="forecast">
+            <h4>Daily Forecast</h4>
+            <div class="containerForecast">
+                <div class="containerDayForecast">
+                    <span class="dayForecast"></span>
+                    <img src="" alt="" class="imgDayForecast">
+                    <span class="gradesDayForecast"></span>
+                </div>
+                <div class="containerDayForecast">
+                    <span class="dayForecast"></span>
+                    <img src="" alt="" class="imgDayForecast">
+                    <span class="gradesDayForecast"></span>
+                </div>
+                <div class="containerDayForecast">
+                    <span class="dayForecast"></span>
+                    <img src="" alt="" class="imgDayForecast">
+                    <span class="gradesDayForecast"></span>
+                </div>
+                <div class="containerDayForecast">
+                    <span class="dayForecast"></span>
+                    <img src="" alt="" class="imgDayForecast">
+                    <span class="gradesDayForecast"></span>
+                </div>
+                <div class="containerDayForecast">
+                    <span class="dayForecast"></span>
+                    <img src="" alt="" class="imgDayForecast">
+                    <span class="gradesDayForecast"></span>
+                </div>
+                <div class="containerDayForecast">
+                    <span class="dayForecast"></span>
+                    <img src="" alt="" class="imgDayForecast">
+                    <span class="gradesDayForecast"></span>
+                </div>
+                <div class="containerDayForecast">
+                    <span class="dayForecast"></span>
+                    <img src="" alt="" class="imgDayForecast">
+                    <span class="gradesDayForecast"></span>
+                </div>
+                <div class="containerDayForecast">
+                    <span class="dayForecast"></span>
+                    <img src="" alt="" class="imgDayForecast">
+                    <span class="gradesDayForecast"></span>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+  
+    <script src="./script.js" type="module"></script>
+</body>
+</html>
